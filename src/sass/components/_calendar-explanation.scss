@@ -77,22 +77,59 @@
   margin: 2em auto;
 }
 
-.calendar_overlay {
-  margin: 0 auto;
+.divider_overlay {
+  margin: 0 auto 2em auto;
   position: relative;
   width: 400px;
-  .months_layer {
-    position: absolute;
-    top: 0;
-  }
+}
+
+.calendar_overlay {
+  margin: 0 auto 2em auto;
+  position: relative;
+  width: 400px;
+}
+
+.fade-in, .fade-out {
+  position: absolute;
+  top: 0;
+  transition: all 2s ease;
 }
 
 .fade-in {
-  transition: opacity 2s ease;
   opacity: 1;
+  transform: scale(1);
 }
 
 .fade-out {
-  transition: opacity 2s ease;
   opacity: 0;
+  transform: scale(1.2);
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  .product {
+    width: 360px;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: .2em .4em .4em rgba(black, .2);
+    .product-title {
+      padding: 1em;
+      font-size: 2em;
+      color: #333;;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 }

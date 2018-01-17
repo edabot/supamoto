@@ -1,0 +1,79 @@
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.spacer {
+  height: 100px;
+}
+
+.calendar_join {
+  position: relative;
+  width: 400px;
+
+  .hello_background {
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    height: 70%;
+    width: 100%;
+    background-color: lightgray;
+  }
+
+
+  .hello_message {
+    opacity: 1;
+    text-align: center;
+  }
+}
+
+
+
+.group-together {
+  .hello_top {
+    transition: all 1s ease;
+    transform: translateY(15%);
+  }
+
+
+  .hello_bottom {
+    transition: all 1s ease;
+    transform: translateY(-15%);
+  }
+}
+
+.group-apart {
+  .hello_top {
+    transition: all 1s ease;
+    transform: translateY(-10%);
+    filter: grayscale(50%) contrast(120%);
+  }
+
+
+  .hello_bottom {
+    transition: all 1s ease;
+    transform: translateY(10%);
+    filter: grayscale(50%) contrast(120%);
+  }
+}
+
+.calendar_overlay {
+  position: relative;
+
+  .months_layer {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.fade-in {
+  transition: opacity 2s ease;
+  opacity: 1;
+}
+
+.fade-out {
+  transition: opacity 2s ease;
+  opacity: 0;
+}

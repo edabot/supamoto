@@ -1,0 +1,35 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 45px;
+  width: 100%;
+  background-color: white;
+  z-index: 2000;
+  border-bottom: 1px solid lightgray;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+
+        &:visited,
+        &:link {
+          color: black;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.navlist {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}

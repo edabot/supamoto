@@ -28,18 +28,6 @@ class Home extends Component {
   componentDidMount() {
     document.addEventListener('DOMContentLoaded', addTrigger);
     console.log('added')
-
-    // var start = null;
-    // var element = document.getElementsByClassName('navbar')[0];
-    // element.style.position = 'absolute';
-    //
-    // function step(timestamp) {
-    //   if (!start) start = timestamp;
-    //   console.log(window.scrollY)
-    //   window.requestAnimationFrame(step);
-    // }
-    //
-    // window.requestAnimationFrame(step);
   }
   componentWillUnmount() {
     document.removeEventListener('DOMContentLoaded', addTrigger)
@@ -53,7 +41,8 @@ class Home extends Component {
         <div className="content">
           <h2>The future can be confusing</h2>
           <p>We turn to calendars to help us plan out our hectic lives. And yet, calendars make this difficult with their stubborn rules. The biggest problem is that of the idea of the month. They seem innocent, but they cause big problems.</p>
-          <p>The month imposes itself on our plans. Calendars separate months with pages or gaps. This forces us to apply some mental effort to see what the next two weeks will look like. If you've ever been surprised by some event in the beginning of a month because you couldn't see it easily, you know the problem.</p>
+          <p>The month imposes itself on our plans. Calendars separate months with pages or gaps. Time is fragmented.</p>
+          <p>This forces us to apply some mental effort to see what the next two weeks will look like. If you've ever been surprised by some event in the beginning of a month because you couldn't see it easily, you know the problem.</p>
           <h2>Fix the gap</h2>
           <p>The solution is pretty simple: get rid of the gap. Just push the months together and reconnect the broken weeks. Now you have a consistently clear two-week view ahead of you.</p>
           <p>As for separating the months, just add color.</p>
@@ -86,7 +75,11 @@ class Home extends Component {
           <p>
             These calendars are printed out large at 24" by 36" (a little bigger than A1) and 12" x 18" (a touch bigger than A3). There are portrait and landscape options and you can start the week on Monday or Sunday.
           </p>
-          <a href="" className="">Buy now</a>
+          <div className='button-container'>
+            <div className="buy-button">
+              <a href="https://supamoto.co/">Buy now</a>
+            </div>
+          </div>
           <Products />
         </div>
       </div>

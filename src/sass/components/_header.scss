@@ -12,11 +12,11 @@
 
 
   &__text-box {
-    font: 4em "Fira Sans", serif;
+    font: 4em 'Playfair Display', sans-serif;
     color: white;
     text-shadow: 0 0 1rem rgba(0,0,0, .5);
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
